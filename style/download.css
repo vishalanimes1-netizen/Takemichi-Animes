@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  min-height: 100vh;
+  background: #111;
+  padding: 10px;
+  color: #fff;
+  font-family: Times, Monospace;
+}
+
+/* Ad Container Styles */
+.ad-container {
+    max-width: 728px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #050505;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 5lpx #222;
+}
+
+.ad-label {
+    color: #999;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.ad-space {
+    min-height: 250px;
+    background: #000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ddd;
+    margin-bottom: 8px;
+}
+
+.download-progress {
+    margin: 30px 0;
+    padding: 20px;
+    background: #000900;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    transition: width 0.3s ease;
+    animation: progress 16s linear;
+}
+
+@keyframes progress {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+.skip-ad {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-top: 20px;
+}
+
+.skip-ad:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255,107,107,0.3);
+}
+
+.skip-ad:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.timer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #667eea;
+    margin: 10px 0;
+}
+
+.ad-option {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #667eea20;
+    border-radius: 5px;
+    color: #667eea;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}

@@ -1,0 +1,41 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: #111;
+  min-height: 100vh;
+  font-family: Times, monospace;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  min-height: 300px;
+  box-shadow: 10px 10px 40px #333;
+  padding: 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  height: 150px;
+  width: 150px;
+}
+
+.texts{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+@media (min-width: 700px){
+  .container{
+    padding: 80px;
+  }
+}
